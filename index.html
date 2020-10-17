@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/reponsive.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <!-- cont trỏ di chuyển mouse -->
+    <div class="cursor"></div>
+    <!-- ============================== -->
+    <!-- menu -->
+    <main class="smooth-scroll-wrapper">
+    <nav>
+        <h1 class="menu">DACLOI</h1>
+        <ul class="nav-links">
+            <li>Info</li>
+        </ul>
+    </nav>
+    <!-- ============================== -->
+    <!-- body content -->
+    <div class="warp">
+        <div class="col-sm-12">
+            <div class="intro">
+                <div class="aboutus">
+                    <h2 class="box">      
+                            I am a creative programmer.  I love creating a polished and meaningful user experience.
+                    </h2>
+                </div>  
+                <div class="line">              
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product -->
+    <div class="warp">
+        <div class="col-12">
+            <h2 class="caption-skill"> self skills</h2>
+            <div class="intro" style="padding-top: 0;">
+                <div class="skills">
+                <div class="table" style="color: white;">
+                    <table>
+                        <tr>
+                          <th>Ngôn Ngữ</th>
+                          <th>Skill</th> 
+                        </tr>
+                        <tr>
+                          <td>Photoshop</td>
+                          <td>90%</td>
+                        </tr>
+                        <tr>
+                          <td>Wordpress</td>
+                          <td>90%</td>
+                        </tr>
+                        <tr>
+                          <td>Html</td>
+                          <td>90%</td>
+                        </tr>
+                        <tr>
+                            <td>Css</td>
+                            <td>90%</td>
+                          </tr>
+                          <tr>
+                            <td>Javacript</td>
+                            <td>70%</td>
+                          </tr>
+                          <tr>
+                            <td>Jquery</td>
+                            <td>70%</td>
+                          </tr>
+                          <tr>
+                            <td>Mysql</td>
+                            <td>80%</td>
+                          </tr>
+                          <tr>
+                            <td>Php</td>
+                            <td>80%</td>
+                          </tr>
+                          <tr>
+                            <td>Java</td>
+                            <td>70%</td>
+                          </tr>
+                          <tr>
+                            <td>C#</td>
+                            <td>70%</td>
+                          </tr>
+                      </table>
+                </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- info ban than -->
+    <div class="warp">
+        <div class="col-12">
+            <h2 class="contactus box">Contact us immediately</h2>
+            <p class="contact-content box email">info@asuzac.com.vn</p>
+            <p class="contact-content box phone">+84-274-3782722</p>
+            <p class="contact-content">Designed & Developed by ASUZAC
+                All rights reserved 2020</p>
+        </div>
+    </div>
+</main>
+    <script src="./public/js/style.js"></script>
+    <script type="text/javascript" src="./public/js/vanilla-tilt.babel.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./public/js/parallax.js"></script>
+        <script>
+                VanillaTilt.init(document.querySelectorAll(".box"), {
+                    max: 10,
+                    speed: 100
+                });
+
+            var skewed = document.querySelectorAll('.skewed');
+            window.addEventListener('scroll',function(){
+                var value = window.scrollY * -1 /55;
+                skewed.forEach(myFunction=>{
+                    myFunction.style.transform = "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0,"+value+", 0, 1)";  
+                });
+                // function myFunction(){
+                //     skewed.style.transform = "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0,"+value+", 0, 1)";
+                // } 
+            })
+    </script>
+</body>
+
+</html>
